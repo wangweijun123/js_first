@@ -1,0 +1,83 @@
+.container {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.mid-container {
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+    flex: 1;
+}
+
+.bottom-container {
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    background-color: brown;
+    justify-content: center; /* 子控件居中 */
+}
+
+.title {
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+}
+.subTitle {
+    color: gray;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.cartTitle {
+    color: gray;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: aliceblue;
+}
+
+.cartTitle2 {
+    color: red;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: aqua;
+}
+
+.swiperStyle {
+    height: 250px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.imageStyle {
+    object-fit: contain;
+}
+
+.wrapMidTextStyle {
+    flex-direction: column;
+}
+
+.midTextStyle {
+    background-color: red;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.color-column {
+    flex-direction: row;
+    align-content: center;
+    margin-top: 20px;
+    background-color: gray;
+}
+.color-item {
+    height: 50px;
+    width: 50px;
+    margin-left: 50px;
+    padding-left: 10px;
+}

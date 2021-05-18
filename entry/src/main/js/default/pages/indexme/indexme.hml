@@ -1,0 +1,29 @@
+<div class="container">
+    <!-- 标题 -->
+    <text class="title">{{title}}</text>
+    <text class="subTitle">{{subTitle}}</text>
+
+    <!-- 中间容器 -->
+    <div class="mid-container">
+
+            <swiper id="swiperImage" class="swiperStyle">
+                <image class="imageStyle" for="{{imageList}}" src="{{$item}}"/>
+            </swiper>
+
+            <!-- 文本加选择点 -->
+            <div class="wrapMidTextStyle">
+                <text class="midTextStyle">{{descriptionFirstParagraph}}</text>
+                <div class="color-column">
+<!--                    <canvas class="color-item" for="{{canvasList}}"/>-->
+                    <canvas id="{{$item.id}}" class="color-item" focusable="true"
+                            for="{{canvasList}}" onclick="swipeToIndex({{$item.index}})"></canvas>
+                </div>
+            </div>
+    </div>
+
+    <!-- 底部容器 if 任何控件的属性，控制是否显示-->
+    <div class="bottom-container" if="{{isCartEmpty}}">
+        <text  class="{{cartStyle}}" onclick="switchStyle">{{cartText}}</text>
+    </div>
+
+</div>
